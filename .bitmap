@@ -17,7 +17,7 @@
     },
     "env/learn-bit-react": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/env/learn-bit-react"
     },
@@ -41,19 +41,19 @@
     },
     "styles/fonts/book": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "base-ui/styles/fonts/book"
     },
     "styles/fonts/roboto": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "base-ui/styles/fonts/roboto"
     },
     "styles/fonts/tangerine-font": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.1",
+        "version": "1.0.2",
         "mainFile": "index.ts",
         "rootDir": "base-ui/styles/fonts/tangerine-font"
     },
@@ -65,79 +65,79 @@
     },
     "themes/theme": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/themes/theme"
     },
     "ui/button": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.7",
+        "version": "1.0.8",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/button"
     },
     "ui/card": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/card"
     },
     "ui/heading": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/heading"
     },
     "ui/hero": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/hero"
     },
     "ui/img": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/img"
     },
     "ui/img-grid": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/img-grid"
     },
     "ui/layout": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/layout"
     },
     "ui/link": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.8",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/link"
     },
     "ui/nav": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/nav"
     },
     "ui/text": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/text"
     },
     "ui/theme-toggler": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.7",
+        "version": "1.0.8",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/theme-toggler"
     },
     "ui/title": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.5",
+        "version": "1.0.6",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/title"
     },
