@@ -1,0 +1,11 @@
+.grid {
+  display: flex;
+  grid-column-gap: 2rem;
+  grid-row-gap: 3rem;
+  justify-content: center;
+}
+
+.img {
+  width: 200px;
+  height: 200px;
+}

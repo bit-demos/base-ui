@@ -1,0 +1,28 @@
+---
+description: '@font-face rules for font-family Circular Pro Book, including bold and italic'
+labels: ['label1', 'label2', 'label3']
+---
+
+import { bookFont } from './index';
+
+## Book font
+
+Provides a handy class name to add to root component so you can easily add Circular Pro Book font
+
+#### Using the book font
+
+Import the font and then apply it as a class to your body or component that wants to use it
+
+```jsx
+import { bookFont } from '@learn-bit-react/base-ui.styles.fonts.book';
+```
+
+### Using css to customize the font
+
+```js live
+<body className={bookFont}>
+  <div>Book font!</div>
+  <div style={{ fontWeight: 'bold' }}>Book Font in Bold</div>
+  <div style={{ fontStyle: 'italic' }}>Book Font in Italic</div>
+</body>
+```

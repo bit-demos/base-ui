@@ -1,0 +1,100 @@
+body[data-theme='light'] .colors,
+.colors {
+  --primary-20: var(--p20);
+  --primary-50: var(--p50);
+  --primary-60: var(--p60);
+
+  --secondary-20: var(--w10);
+  --secondary-40: var(--w10);
+  --secondary-50: var(--w10);
+  --secondary-60: var(--w10);
+
+  --light-20: var(--w10);
+  --light-30: var(--w20);
+  --light-50: var(--d20);
+
+  --dark-20: var(--d20);
+  --dark-30: var(--d30);
+  --dark-50: var(--d50);
+
+  // text colors
+  --text-primary: var(--d60);
+  --text-secondary: var(--l70);
+  --text-disabled: var(--b50);
+  --text-error: var(--r50);
+  --text-link: var(--p50);
+  --border-card: var(--d15);
+
+  // social colors
+  --twitter: #1da1f2;
+  --slack: #4a154b;
+  --github: #24292e;
+
+  // old colors
+  --primary-color: var(--g50);
+  --secondary-color: var(--y50);
+  --tertiary-color: var(--pink50);
+  --complimentary-color: var(--d40);
+  --text-color: var(--d50);
+
+  // text colors
+  --text-color: var(--d50);
+  --text-color-heavy: var(--d60);
+  --text-color-light: var(--d40);
+  --text-inactive: var(--d20);
+  --text-inactive-heavy: var(--d30);
+
+  --border-color: var(--d20);
+  --border-color-heavy: var(--d30);
+  --border-color-light: var(--d15);
+  --border-color-lightest: var(--d10);
+
+  // -- primary -- //
+  --primary-color: var(--g50);
+  --primary-heavy: var(--g60);
+  --primary-light: var(--g40);
+  --primary-text: var(--g50);
+  --primary-text-heavy: var(--g60);
+  --text-on-primary: var(--y10);
+  --primary-bg: var(--g20);
+  --primary-bg-heavy: var(--g30);
+
+  // -- secondary -- //
+  --secondary-color: var(--y50);
+  --secondary-heavy: var(--y60);
+  --secondary-light: var(--y40);
+  --secondary-text: var(--y50);
+  --secondary-text-heavy: var(--y60);
+  --text-on-secondary: var(--g60);
+  --secondary-bg: var(--y20);
+  --secondary-bg-heavy: var(--y30);
+
+  // -- background -- //
+  // // higher number = more important, and 'closer' to the user.
+  // --bg-01: var(--w10);
+  // --bg-03: var(--w20);
+  // --bg-05: var(--d10);
+  // --bg-07: var(--d15);
+  // --bg-09: var(--d20);
+  // --bg-11: var(--d30);
+
+  // intractable item
+  --bg-color: var(--w10); // when resting
+  --bg-heavy: var(--w20); // when hovering, focus
+  --bg-heaviest: var(--d10); // when active (clicked)
+
+  --bg-bedrock: var(--w10); // i.e. <body/> background
+  --bg-navigation: var(--w20); // i.e. <body/> background
+  --bg-overlay: var(--w10); // e.g. button, input, etc
+  --bg-modal: var(--w10); // e.g. button, input, etc
+  --bg-tooltip: var(--w10); // e.g. button, input, etc
+  --bg-tooltip-heavy: var(--w20);
+  --bg-dent: var(--w20);
+
+  // -- error -- //
+  --error-color: var(--r50);
+  --error-heavy: var(--r60);
+  --error-light: var(--r40);
+  --error-bg: var(--r20);
+  --error-bg-heavy: var(--r30);
+}

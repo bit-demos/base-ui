@@ -1,0 +1,27 @@
+---
+description: 'RobotoMono Font from Google'
+labels: ['Google font']
+---
+
+import { Roboto } from './roboto';
+
+## Component for adding a Google Font
+
+A component that creates a link tag with href to the Roboto font from Google fonts.
+
+```js
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" />
+```
+
+### Component usage
+
+Import the component and use it to in your compositions to see how your component should look. In the component refer to the font using css.
+
+At app level you shoud add the link tag to the head of your app instead of using the component.
+
+```js live
+<>
+  <Roboto />
+  <span style={{ fontFamily: 'Roboto' }}>Text in Roboto Font</span>
+</>
+```

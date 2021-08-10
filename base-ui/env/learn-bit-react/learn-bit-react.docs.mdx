@@ -1,0 +1,42 @@
+---
+description: 'A standard React component development environment to help people learn Harmony'
+labels: ['react', 'typescript', 'env', 'extension', 'example']
+---
+
+## Overview
+
+A standard React development environment for building modular and reusable MFEs.
+
+### Usage instructions
+
+Create a **variant** in project's `workspace.json` file.  
+Set this extension as the variant's extension.
+
+```json
+{
+  "teambit.workspace/variants": {
+    "{ui/*}": {
+      "learn-bit-react.base-ui/env/learn-bit-react": {}
+    }
+  }
+}
+```
+
+### Routing
+
+By default, all compositions render under the React Router `MemoryRouter` context. This allows the development of
+components which depend on React Router.
+
+### Compilation
+
+By default, Component compilation is done with the TypeScript compiler. Target format is `ES2015` which
+supports execution from both NodeJS and browser runtimes for server-side rendering.
+
+### Testing
+
+Component testing is done through [Jest](https://jestjs.io/) with the default `teambit.react/react`.
+
+### Extend
+
+This component development environment can be easily extended. Just add the env as a dependency of your extension
+and use the extension API.

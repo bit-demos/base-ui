@@ -1,0 +1,70 @@
+---
+description: 'A Button component that changes styling based on the variation prop'
+labels: ['primary', 'secondary']
+---
+
+import { Button } from './button';
+import { FigmaEmbed } from '@learn-bit-react/base-ui.figma.figma-embed';
+
+## Button component
+
+An example of a basic button that
+
+- renders some text
+- changes styling based on the variation prop
+- adds className so it's styling can be controlled by consuming component
+
+### How the component works
+
+This component uses the data-variation to pass in the prop of variation. You can inspect the `button.tsx` file in the code tab for more details.
+
+```js
+<button
+  className={classNames(styles.button, className)}
+  data-variation={variation}>
+  {buttonText}
+</button>
+```
+
+Available values for variation are 'primary' and 'secondary'. You can inspect the `button.tsx` file in the code tab for more details.
+
+```js
+variation?: 'primary' | 'secondary';
+```
+
+Button is then styled using the data-variation property. You can inspect the `button.module.scss` file in the code tab for more details.
+
+```scss
+.button {
+  // basic styling goes here
+  &[data-variation='primary'] {
+    color: white;
+    background-color: #6c5ce7;
+    border: 1px solid #6c5ce7;
+  }
+  // secondary button styling goes here
+}
+```
+
+### Component usage
+
+If we want to consume this component in another component:
+
+```js
+import { Button } from '@learn-bit-react/base-ui.ui.button';
+
+...
+<Button buttonText="hello from Button" variation="primary" />;
+```
+
+### Using props to customize the text and variation
+
+Modify the text to see it change live. See the available props and types in the Properties section below.
+
+```js live
+<Button buttonText="hello from Button" variation="primary" />
+```
+
+## Designs
+
+<FigmaEmbed iframeSrc="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDaShaxpMbyWlvOGMFFUHCl%2Fbutton%3Fnode-id%3D0%253A1" />

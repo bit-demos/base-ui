@@ -1,0 +1,32 @@
+---
+description: 'Tangerine Font from Google'
+labels: ['Google Font']
+---
+
+import { TangerineFont } from './tangerine-font';
+
+## Component for adding a Google Font
+
+A component that creates a link tag with href to the Tangerine font from Google fonts.
+
+```js
+<link
+  href="https://fonts.googleapis.com/css?family=Tangerine&display=swap"
+  rel="stylesheet"
+/>
+```
+
+### Component usage
+
+Import the component and use it to in your compositions to see how your component should look. In the component refer to the font using css.
+
+At app level you shoud add the link tag to the head of your app instead of using the component.
+
+```js live
+<div>
+  <TangerineFont />
+  <span style={{ fontFamily: 'Tangerine', fontSize: '4rem' }}>
+    Text in Tangerine Font
+  </span>
+</div>
+```

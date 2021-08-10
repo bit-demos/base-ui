@@ -1,0 +1,78 @@
+---
+description: 'Custom generator for generating a workspace'
+labels: ['generator', 'templates', 'workspace']
+---
+
+### Modifying your Generator
+
+The generator comes with some pre-configured files that are necessary for the workspace to work properly. You can customize these files and you can also add your own files.
+
+```jsx title="index.ts"
+generateFiles: async (context: WorkspaceContext) => {
+    return [
+      {
+        relativePath: 'workspace.jsonc',
+        content: await workspaceConfig(context)
+      },
+      {
+        relativePath: '.gitignore',
+        content: gitIgnore()
+      },
+      {
+        relativePath: 'README.md',
+        content: readme()
+      }
+    ];
+  },
+```
+
+You can also generator an array of componentst that you want to add to your workspace.
+
+```jsx title="index.ts"
+importComponents: () => {
+  return [
+    {
+      id: 'learn-bit-react.ecommerce/entity/product',
+      path: 'ecommerce/entity/product'
+    }
+  ];
+};
+```
+
+You can customize anything you like from the name, logo, default-scope, variants, registering a component generator etc
+
+```jsx  title="workspace-config.ts"
+...
+export async function workspaceConfig({
+  name,
+  defaultScope
+}: WorkspaceContext) {
+  const configParsed = await getWorkspaceConfigTemplateParsed();
+  configParsed['teambit.workspace/workspace'].name = name;
+  configParsed['teambit.workspace/workspace'].icon =
+    'https://my-organization/my-logo.svg';
+  configParsed['teambit.workspace/variants'] = {
+    '*': {
+      'teambit.react/react': {}
+    },
+    '{env/*}, {apps/*}': {
+      'teambit.harmony/aspect': {}
+    },
+    '{entity/*}': {
+      'teambit.harmony/node': {}
+    }
+  };
+  ...
+ return stringifyWorkspaceConfig(configParsed);
+}
+```
+
+### Using your Workspace Generator
+
+Use your generator to generate your custom workspace by using the `bit new` command followed by the name of the workspace template then the name you want to give your workspace followed by the `--aspect` flag and the full Id of the generator you want to use.
+
+```bash
+bit new learn-bit-workspace shoe-store --aspect learn-bit-react.base-ui/workspace-generator
+```
+
+
