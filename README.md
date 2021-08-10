@@ -20,7 +20,7 @@ bit init
 Use the `bit import` command to import all components into your workspace. This is similar to cloning a project.
 
 ```bash
-bit import "learn-bit-react.shoe-store/*"
+bit import "learn-bit-react.base-ui/*"
 ```
 
 Copy the `workspace.jsonc` file from this repository and replace the one in your workspace. This will ensure you have the correct dependencies and environments set.
