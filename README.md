@@ -23,7 +23,7 @@ bvm install
 ```
 
 ### 🏠 Create a Workspace
-A [Workspace](/workspace/overview) is where you will compose and manage your components. Creating a Workspace can be done with a single command. A workspace can be created in an empty directory or in an existing project.
+A [Workspace](https://harmony-docs.bit.dev/building-with-bit/manage-workspace) is where you will compose and manage your components. Creating a Workspace can be done with a single command. A workspace can be created in an empty directory or in an existing project.
 
 Create an empty workspace. (skip this step if you want to import the components into an already created workspace)
 
