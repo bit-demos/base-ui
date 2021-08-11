@@ -1,6 +1,6 @@
 # Base-ui components
 
-Base components that are used to compose more complex components and can be used aross multiple scopes and applications
+Base components that are used to compose more complex components and can be used aross multiple scopes and applications. Below you can see how the Base UI components are used in the ecommerce scope and also to create the stores applications.
 
 <img width="1124" alt="CleanShot 2021-08-10 at 23 26 40@2x" src="https://user-images.githubusercontent.com/13063165/128937364-5c814d60-7538-4e00-8571-31ad3020bae6.png">
 
