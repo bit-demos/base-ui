@@ -4,7 +4,7 @@ Base components that are used to compose more complex components and can be used
 
 <img width="1124" alt="CleanShot 2021-08-10 at 23 26 40@2x" src="https://user-images.githubusercontent.com/13063165/128937364-5c814d60-7538-4e00-8571-31ad3020bae6.png">
 
-A set of base ui components built with Bit including basic react ui components, style components, font components, a custom env, a custom component generator, a custom workspace generator and more. Exported components can be explored on [Bit.dev](https://bit.dev/learn-bit-react/base-ui).
+A set of base ui components built with Bit including basic react ui components, style components, font components, a custom env, a custom component generator, a custom workspace generator and more. Exported components can be explored [here](https://bit.dev/learn-bit-react/base-ui).
 
 <img width="1790" alt="CleanShot 2021-08-10 at 23 17 28@2x" src="https://user-images.githubusercontent.com/13063165/128936353-9524b65f-e2a3-4e2b-9b35-6ed8cd06743b.png">
 
