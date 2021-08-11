@@ -8,6 +8,7 @@ Exported components can be seen [here](https://bit.dev/learn-bit-react/base-ui)
 
 <img width="1790" alt="CleanShot 2021-08-10 at 23 17 28@2x" src="https://user-images.githubusercontent.com/13063165/128936353-9524b65f-e2a3-4e2b-9b35-6ed8cd06743b.png">
 
+
 ## Import(Clone) Components
 
 With Bit you can import one component to your workspace or you can import a collection of components called a scope.
@@ -67,6 +68,22 @@ This will apply the correct environments for each of the components we want to i
     }
   }
 ```
+### Add the Dependencies
+
+Add the dependeinces
+
+```jsonc
+ "dependencies": {
+    "@teambit/ui.react-router.link": "0.0.368",
+    "@testing-library/jest-dom": "5.12.0",
+    "@testing-library/react": "11.2.6",
+    "@testing-library/react-hooks": "5.1.1",
+    "classnames": "2.3.1",
+    "react-router": "5.2.0",
+    "react-router-dom": "5.2.0"   
+  },
+ ```
+
 #### Custom Component Generator
 
 Register the Generator Aspect if you want to use the custom templates to generate more components. This goes at root level of the `workspace.jsonc` file. Once we have imported the components from the base-ui scope you will be able to run `bit templates` to see all available templates including the custom ones.
