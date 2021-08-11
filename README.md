@@ -19,16 +19,16 @@ Create an empty workspace. (skip this step if you want to import the components 
 
 ```bash
 bit new react my-workspace --empty
-cd base-ui
 ```
 
-Use the `bit import` command to import all components into your workspace. This is similar to cloning a project.
+Enter the current working directory
 
 ```bash
-bit import "learn-bit-react.base-ui/*"
+cd my-workspace
 ```
 
-Modify the variants section of your `workspace.jsonc` file.
+Open the Project in your editor and modify the variants section of your `workspace.jsonc` file. 
+**Important step** if you don't configure the variants first then the import will not work.
 
 ```json
 "teambit.workspace/variants": {
@@ -52,6 +52,13 @@ Modify the variants section of your `workspace.jsonc` file.
     }
   }
 ```
+
+Use the `bit import` command to import all components into your workspace. This is similar to cloning a project.
+
+```bash
+bit import "learn-bit-react.base-ui/*"
+```
+
 
 Start the dev server
 
