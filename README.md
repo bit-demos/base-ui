@@ -19,6 +19,7 @@ Create an empty workspace. (skip this step if you want to import the components 
 
 ```bash
 bit new react base-ui --empty
+cd base-ui
 ```
 
 Use the `bit import` command to import all components into your workspace. This is similar to cloning a project.
