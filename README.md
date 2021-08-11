@@ -15,10 +15,10 @@ npm i -g @teambit/bvm
 bvm install
 ```
 
-Create an empty workspace
+Create an empty workspace. (skip this step if you want to import the components into an already created workspace)
 
 ```bash
-bit init
+bit new react base-ui --empty
 ```
 
 Use the `bit import` command to import all components into your workspace. This is similar to cloning a project.
