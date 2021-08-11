@@ -18,7 +18,7 @@ bvm install
 Create an empty workspace. (skip this step if you want to import the components into an already created workspace)
 
 ```bash
-bit new react base-ui --empty
+bit new react my-workspace --empty
 cd base-ui
 ```
 
@@ -28,7 +28,30 @@ Use the `bit import` command to import all components into your workspace. This 
 bit import "learn-bit-react.base-ui/*"
 ```
 
-Copy the `workspace.jsonc` file from this repository and replace the one in your workspace. This will ensure you have the correct dependencies and environments set.
+Modify the variants section of your `workspace.jsonc` file.
+
+```json
+"teambit.workspace/variants": {
+    "{ui/**}": {
+      "learn-bit-react.base-ui/env/learn-bit-react": {}
+    },
+    "{styles/**}, {themes/*}, , {figma/*}": {
+      "teambit.react/react": {}
+    },
+    "{env/*}, {apps/*}": {
+      "teambit.harmony/aspect": {}
+    },
+    "{component-generator}, {workspace-generator}": {
+      "teambit.harmony/aspect": {}
+    },
+    "{entity/*}": {
+      "teambit.harmony/node": {}
+    },
+    "{content/*}": {
+      "teambit.mdx/mdx": {}
+    }
+  }
+```
 
 Start the dev server
 
