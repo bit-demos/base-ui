@@ -10,7 +10,7 @@ A set of base ui components built with Bit including basic react ui components, 
 
 ## ☁️  Import(Clone) the Base UI Components
 
-This is a demo project which you can clone using git or import all components into an already existing workspace.
+This is a demo project which you can clone using git or you can use Bit to import all components into an already existing workspace.
 
 ### ⬇️ Install Bit
 
