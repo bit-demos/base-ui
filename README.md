@@ -30,6 +30,13 @@ Create an empty workspace. (skip this step if you want to import the components 
 bit new react my-workspace --empty
 ```
 
+in an exisitng project:
+
+```bash
+bit init
+```
+
+
 Enter the current working directory
 
 ```bash
