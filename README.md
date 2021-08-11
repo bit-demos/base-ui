@@ -28,7 +28,8 @@ cd my-workspace
 ```
 
 Open the Project in your editor and modify the variants section of your `workspace.jsonc` file. 
-**Important step** if you don't configure the variants first then the import will not work.
+
+**Important** if you don't configure the variants first then the import will not work.
 
 ```json
 "teambit.workspace/variants": {
