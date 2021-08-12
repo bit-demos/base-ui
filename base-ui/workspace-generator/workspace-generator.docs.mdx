@@ -26,7 +26,7 @@ generateFiles: async (context: WorkspaceContext) => {
   },
 ```
 
-You can also generator an array of componentst that you want to add to your workspace.
+You can also generator an array of components that you want to add to your workspace.
 
 ```jsx title="index.ts"
 importComponents: () => {
@@ -41,7 +41,7 @@ importComponents: () => {
 
 You can customize anything you like from the name, logo, default-scope, variants, registering a component generator etc
 
-```jsx  title="workspace-config.ts"
+```jsx title="workspace-config.ts"
 ...
 export async function workspaceConfig({
   name,
@@ -74,5 +74,3 @@ Use your generator to generate your custom workspace by using the `bit new` comm
 ```bash
 bit new learn-bit-workspace shoe-store --aspect learn-bit-react.base-ui/workspace-generator
 ```
-
-

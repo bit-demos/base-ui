@@ -93,7 +93,7 @@
     "{entity/*}": {
       "teambit.harmony/node": {}
     },
-    "{content/*}": {
+    "{content/*}, {readme}": {
       "teambit.mdx/mdx": {}
     }
   }

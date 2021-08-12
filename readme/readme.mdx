@@ -1,0 +1,45 @@
+# Base UI Components
+
+This is a collection of Base UI components that can be used to build your own UI or to create more complex components. These components are being used to compose componets in the e-commerce scope as well as the stores applications.
+
+## The base-ui scope contains the following:
+
+### env
+
+A custom React environment which customizes the environment of your component during different runtimes.
+
+#### Preview Runtime
+
+Anything added here is only applied during preview and not during the main runtime meaning it doesn't affect the output of your components. Here we can apply theming to our components which is used when previewing the components in compositions.
+
+#### Main Runtime
+
+This is applied at the main runtime of the component and affects how the component is built. Here you can configure webpack, jest, the TypeScript compiler as well as add rules for linters and formatters.
+
+### Figma
+
+Component for embedding figma into your components so you can see your designs and components side by side.
+
+### Styles
+
+Components can also just contain styles. By creating a component for your styles it means you can reuse them across other components. This is especially helpful for when sharing variables, animations or just re-using styles across multiple components.
+
+### Fonts
+
+Components can also contain fonts from either Google or a CDN. These can then be used in your components compositions and themes.
+
+### Themes
+
+Create multiple themes and reuse theming across your components and applications.
+
+### UI
+
+Create base components that can be used to create more complex components maintianing the same consistency across your components and applications.
+
+### Component Generator
+
+Create your own custom templates for your components with the component generator.
+
+### Workspace Generator
+
+A workspace generator with a custom made workspace template. The generator comes with some pre-configured files that are necessary for the workspace to work properly. You can customize these files and you can also add your own files.

@@ -36,4 +36,3 @@ bit start
 ```
 
 You should now see all the ecommerce components on [localhost:3000](http://localhost:3000)
-
