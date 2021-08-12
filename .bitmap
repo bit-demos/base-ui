@@ -11,13 +11,13 @@
 {
     "component-generator": {
         "scope": "learn-bit-react.base-ui",
-        "version": "0.0.3",
+        "version": "0.0.4",
         "mainFile": "index.ts",
         "rootDir": "base-ui/component-generator"
     },
     "env/learn-bit-react": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/env/learn-bit-react"
     },
@@ -28,8 +28,8 @@
         "rootDir": "base-ui/figma/figma-embed"
     },
     "readme": {
-        "scope": "",
-        "version": "",
+        "scope": "learn-bit-react.base-ui",
+        "version": "0.0.1",
         "mainFile": "index.ts",
         "rootDir": "readme"
     },
@@ -77,79 +77,79 @@
     },
     "ui/button": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.8",
+        "version": "1.0.9",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/button"
     },
     "ui/card": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/card"
     },
     "ui/heading": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/heading"
     },
     "ui/hero": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/hero"
     },
     "ui/img": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/img"
     },
     "ui/img-grid": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/img-grid"
     },
     "ui/layout": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/layout"
     },
     "ui/link": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.10",
+        "version": "1.0.11",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/link"
     },
     "ui/nav": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/nav"
     },
     "ui/text": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/text"
     },
     "ui/theme-toggler": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.8",
+        "version": "1.0.9",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/theme-toggler"
     },
     "ui/title": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.6",
+        "version": "1.0.7",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/title"
     },
     "workspace-generator": {
         "scope": "learn-bit-react.base-ui",
-        "version": "0.0.2",
+        "version": "0.0.3",
         "mainFile": "index.ts",
         "rootDir": "base-ui/workspace-generator"
     },
