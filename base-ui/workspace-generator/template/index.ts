@@ -23,6 +23,7 @@ export const workspaceTemplate: WorkspaceTemplate = {
   importComponents: () => [
     {
       id: 'learn-bit-react.ecommerce/entity/product',
+      targetName: 'entity/product',
       path: 'ecommerce/entity/product'
     }
   ]

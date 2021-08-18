@@ -26,13 +26,14 @@ generateFiles: async (context: WorkspaceContext) => {
   },
 ```
 
-You can also generator an array of components that you want to add to your workspace.
+You can also generate an array of components that you want to add to your workspace. Add the component ID of where you want to generate the component from, the targetName is optional and only needed if you want to add a differnt component ID to the real one and the path of where you want the component to be generated.
 
 ```jsx title="index.ts"
 importComponents: () => {
   return [
     {
       id: 'learn-bit-react.ecommerce/entity/product',
+      targetName: 'entity/product',
       path: 'ecommerce/entity/product'
     }
   ];

@@ -9,11 +9,26 @@ A customized version which extends the default React component development envir
 
 ### Usage instructions
 
+When creating an environment component make sure to apply the aspect environment under the **variant** section of your `workspace.json`. In the example below the all components under the `env` namepsace will have the aspect environment applied.
+
+```json
+{
+  "teambit.workspace/variants": {
+    "{env/*}": {
+      "teambit.harmony/aspect": {}
+    }
+  }
+}
+```
+
 Under the **variant** section of your `workspace.json` file choose which components you want to have the custom environment set. You can find the id of the extension in the `my-react.aspect.ts` file.
 
 ```json
 {
   "teambit.workspace/variants": {
+    "{env/*}": {
+      "teambit.harmony/aspect": {}
+    },
     "{templates/ui/**}, {templates/pages/**}": {
       "learn-bit-react.base-ui/env/learn-bit-react": {}
     }
