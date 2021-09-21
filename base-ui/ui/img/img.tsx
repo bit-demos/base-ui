@@ -11,8 +11,19 @@ export type ImgProps = {
    * image alternative text
    */
   alt: string;
+  /**
+   * lazy load image
+   */
+  loading?: 'lazy' | 'eager';
 } & React.ImgHTMLAttributes<HTMLImageElement>;
 
-export function Img({ alt, src, className }: ImgProps) {
-  return <img className={classNames(className)} alt={alt} src={src} />;
+export function Img({ alt, src, loading, className }: ImgProps) {
+  return (
+    <img
+      className={classNames(className)}
+      alt={alt}
+      src={src}
+      loading={loading}
+    />
+  );
 }

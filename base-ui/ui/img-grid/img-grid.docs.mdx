@@ -4,13 +4,16 @@ labels: ['images', 'grid']
 ---
 
 import { ImgGrid } from './img-grid';
-
-## React Component for rendering a grid of Images
+import { mockProductList5 } from '@learn-bit-react/ecommerce.entity.product';
 
 A basic grid that renders some images
 
-### Component usage
+### Renders a list of mock images
 
 ```js
+import { mockProductList5 } from '@learn-bit-react/ecommerce.entity.product';
+```
+
+```js live
 <ImgGrid list={mockProductList5} />
 ```

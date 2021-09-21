@@ -6,7 +6,7 @@ export type FigmaEmbedProps = {
   /**
    * src for figma embed. Click on Share button in Figma and click on 'Get embed code' and then copy the value of the src attribute from the iframe.
    */
-  iframeSrc: string;
+  src: string;
   /**
    * add lazy loading
    */
@@ -19,21 +19,19 @@ export type FigmaEmbedProps = {
    * height of iframe
    */
   height?: string;
-} & React.HTMLAttributes<HTMLIFrameElement>;
+  /**
+   * allow figma embed to open in full screen
+   */
+  allowFullScreen?: boolean;
+} & React.IframeHTMLAttributes<HTMLIFrameElement>;
 
-export function FigmaEmbed({
-  iframeSrc,
-  loading = 'lazy',
-  width = '100%',
-  height = '600',
-  className
-}: FigmaEmbedProps) {
-  return (
-    <iframe
-      className={classNames(styles.iframe, className)}
-      width={width}
-      height={height}
-      src={iframeSrc}
-      loading={loading}></iframe>
-  );
+export function FigmaEmbed({ className, ...rest }: FigmaEmbedProps) {
+  return <iframe className={classNames(styles.iframe, className)} {...rest} />;
 }
+
+FigmaEmbed.defaultProps = {
+  allowFullScreen: true,
+  loading: 'lazy',
+  width: '100%',
+  height: '600px'
+};

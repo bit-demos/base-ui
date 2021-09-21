@@ -6,8 +6,6 @@ labels: ['primary', 'secondary']
 import { Button } from './button';
 import { FigmaEmbed } from '@learn-bit-react/base-ui.figma.figma-embed';
 
-## Button component
-
 An example of a basic button that
 
 - renders some text
@@ -21,7 +19,8 @@ This component uses the data-variation to pass in the prop of variation. You can
 ```js
 <button
   className={classNames(styles.button, className)}
-  data-variation={variation}>
+  data-variation={variation}
+>
   {buttonText}
 </button>
 ```
@@ -46,25 +45,24 @@ Button is then styled using the data-variation property. You can inspect the `bu
 }
 ```
 
-### Component usage
-
-If we want to consume this component in another component:
-
-```js
-import { Button } from '@learn-bit-react/base-ui.ui.button';
-
-...
-<Button buttonText="hello from Button" variation="primary" />;
-```
-
-### Using props to customize the text and variation
-
-Modify the text to see it change live. See the available props and types in the Properties section below.
+### Renders a primary button
 
 ```js live
 <Button buttonText="hello from Button" variation="primary" />
 ```
 
+### Renders a secondary button
+
+```js live
+<Button buttonText="hello from Button" variation="secondary" />
+```
+
+### Renders a disabled button
+
+```js live
+<Button buttonText="hello from Button" disabled />
+```
+
 ## Designs
 
-<FigmaEmbed iframeSrc="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDaShaxpMbyWlvOGMFFUHCl%2Fbutton%3Fnode-id%3D0%253A1" />
+<FigmaEmbed src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FDaShaxpMbyWlvOGMFFUHCl%2Fbutton%3Fnode-id%3D0%253A1" />
