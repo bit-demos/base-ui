@@ -1,28 +1,32 @@
 import React from 'react';
 import { Button } from './button';
 
-export const PrimaryButton = () => (
-  <Button variation="primary" buttonText="hello from Primary Button" />
-);
+export const PrimaryButton = () => <Button primary>Primary</Button>;
 
 export const PrimaryButtonDisabled = () => (
-  <Button variation="primary" disabled buttonText="hello from Primary Button" />
+  <Button primary disabled>
+    Primary
+  </Button>
 );
 
-export const SecondaryButton = () => (
-  <Button variation="secondary" buttonText="hello from Secondary Button" />
-);
+export const SecondaryButton = () => <Button secondary>Secondary</Button>;
 
 export const SecondaryButtonDisabled = () => (
-  <Button
-    variation="secondary"
-    disabled
-    buttonText="hello from Secondary Button"
-  />
+  <Button secondary disabled>
+    Secondary
+  </Button>
 );
 
-export const WhiteButton = () => <Button buttonText="hello from Button" />;
+export const WhiteButton = () => <Button white>White</Button>;
 
 export const WhiteButtonDisabled = () => (
-  <Button buttonText="hello from Button" disabled />
+  <Button white disabled>
+    White
+  </Button>
+);
+
+export const ButtonAsLink = () => (
+  <Button primary as="a" href="/">
+    Link
+  </Button>
 );

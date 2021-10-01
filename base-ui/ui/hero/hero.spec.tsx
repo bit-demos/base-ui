@@ -4,6 +4,6 @@ import { BasicHero } from './hero.composition';
 
 it('should render with the correct text', () => {
   const { getByText } = render(<BasicHero />);
-  const rendered = getByText('Hero Component');
+  const rendered = getByText('Stylish Shoes Online');
   expect(rendered).toBeTruthy();
 });

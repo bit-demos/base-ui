@@ -1,66 +1,37 @@
 ---
-description: 'A Button component that changes styling based on the variation prop'
-labels: ['primary', 'secondary']
+description: 'A Button component for buttons and elements that look like buttons'
+labels: ['button', 'primary', 'secondary']
 ---
 
 import { Button } from './button';
 import { FigmaEmbed } from '@learn-bit-react/base-ui.figma.figma-embed';
 
-An example of a basic button that
-
-- renders some text
-- changes styling based on the variation prop
-- adds className so it's styling can be controlled by consuming component
-
-### How the component works
-
-This component uses the data-variation to pass in the prop of variation. You can inspect the `button.tsx` file in the code tab for more details.
-
-```js
-<button
-  className={classNames(styles.button, className)}
-  data-variation={variation}
->
-  {buttonText}
-</button>
-```
-
-Available values for variation are 'primary' and 'secondary'. You can inspect the `button.tsx` file in the code tab for more details.
-
-```js
-variation?: 'primary' | 'secondary';
-```
-
-Button is then styled using the data-variation property. You can inspect the `button.module.scss` file in the code tab for more details.
-
-```scss
-.button {
-  // basic styling goes here
-  &[data-variation='primary'] {
-    color: white;
-    background-color: #6c5ce7;
-    border: 1px solid #6c5ce7;
-  }
-  // secondary button styling goes here
-}
-```
+Button renders the HTML tag `<button>` as default but can use any HTML tag instead such as an `<a>` tag.
 
 ### Renders a primary button
 
-```js live
-<Button buttonText="hello from Button" variation="primary" />
-```
-
-### Renders a secondary button
+By adding the `primary` prop, the button will be styled as secondary button. This can be changed to `secondary` or removed to make it a `white` button.
 
 ```js live
-<Button buttonText="hello from Button" variation="secondary" />
+<Button primary>Primary</Button>
 ```
 
 ### Renders a disabled button
 
+Add the disabled attribute to the button to disable it.
+
 ```js live
-<Button buttonText="hello from Button" disabled />
+<Button disabled>disabled</Button>
+```
+
+### Renders a Link that looks like a Button
+
+`as` prop allows you to add any HTML tag such as an `a` tag. Button attributes are removed and any attributes of the element specified can be used such as `href` for `a` elements.
+
+```js live
+<Button primary as="a" href="/">
+  Link
+</Button>
 ```
 
 ## Designs

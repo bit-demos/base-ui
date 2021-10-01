@@ -11,8 +11,8 @@ export class MyReactPreview {
 
   static async provider([react]: [ReactPreview]) {
     const myReactPreview = new MyReactPreview();
-    // register a new provider to wrap all compositions in the symphony-react environment.
-    react.registerProvider([MemoryRouter, Theme]);
+    // register a new provider to wrap all compositions in our custom react environment.
+    react.registerProvider([Theme, MemoryRouter]);
 
     return myReactPreview;
   }

@@ -1,11 +1,13 @@
 .grid {
   display: flex;
-  grid-column-gap: 2rem;
-  grid-row-gap: 3rem;
+  flex-wrap: wrap;
+  grid-column-gap: 1rem;
+  grid-row-gap: 1rem;
   justify-content: center;
 }
 
 .img {
   width: 200px;
   height: 200px;
+  object-fit: cover;
 }

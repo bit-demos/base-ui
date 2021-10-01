@@ -1,30 +1,61 @@
 import React from 'react';
 import classNames from 'classnames';
-import { button } from '@learn-bit-react/base-ui.styles.button';
+import styles from './button.module.scss';
 
-export type ButtonProps = {
+export type ButtonOwnProps<E extends React.ElementType = React.ElementType> = {
   /**
-   * a text to be rendered in the component.
+   * content of the button
    */
-  buttonText?: string;
+  children: string;
   /**
-   * sets the primary color of the button
+   * sets the button as primary
    */
-  variation?: 'primary' | 'secondary';
-} & React.ButtonHTMLAttributes<HTMLButtonElement>;
+  primary?: boolean;
+  /**
+   * sets the button as secondary
+   */
+  secondary?: boolean;
+  /**
+   * sets the button as white
+   */
+  white?: boolean;
+  /**
+   * uses any element instead of button such as an <a> tag for links
+   */
+  as?: E;
+};
 
-export function Button({
-  buttonText,
-  variation = 'primary',
+export type ButtonProps<E extends React.ElementType> = ButtonOwnProps<E> &
+  Omit<React.ComponentProps<E>, keyof ButtonOwnProps>;
+
+const defaultElement = 'button';
+
+const createClassNames = (classes: { [key: string]: boolean }): string => {
+  let buttonClassName = '';
+  for (const [key, value] of Object.entries(classes)) {
+    if (value) buttonClassName += key + ' ';
+  }
+  return buttonClassName.trim();
+};
+
+export function Button<E extends React.ElementType = typeof defaultElement>({
+  children,
+  primary = false,
+  secondary = false,
+  white = false,
+  as,
   className,
   ...rest
-}: ButtonProps) {
+}: ButtonProps<E>) {
+  const buttonClassName = createClassNames({ primary, secondary, white });
+  const TagName = as || defaultElement;
+
   return (
-    <button
-      className={classNames(button, className)}
-      data-variation={variation}
-      {...rest}>
-      {buttonText}
-    </button>
+    <TagName
+      {...rest}
+      className={classNames(styles.button, styles[buttonClassName], className)}
+    >
+      {children}
+    </TagName>
   );
 }
