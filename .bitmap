@@ -17,7 +17,7 @@
     },
     "env/learn-bit-react": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/env/learn-bit-react"
     },
@@ -77,73 +77,73 @@
     },
     "ui/button": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.11",
+        "version": "1.0.12",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/button"
     },
     "ui/card": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/card"
     },
     "ui/heading": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/heading"
     },
     "ui/hero": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/hero"
     },
     "ui/img": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/img"
     },
     "ui/img-grid": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/img-grid"
     },
     "ui/layout": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/layout"
     },
     "ui/link": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.13",
+        "version": "1.0.14",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/link"
     },
     "ui/nav": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/nav"
     },
     "ui/text": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/text"
     },
     "ui/theme-toggler": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.11",
+        "version": "1.0.12",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/theme-toggler"
     },
     "ui/title": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.9",
+        "version": "1.0.10",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/title"
     },
