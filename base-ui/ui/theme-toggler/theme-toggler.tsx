@@ -1,7 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { Button, ButtonProps } from '@learn-bit-react/base-ui.ui.button';
-
-export type ThemeTogglerProps = {} & ButtonProps;
+import { Button } from '@learn-bit-react/base-ui.ui.button';
 
 export function ThemeToggler() {
   const [theme, setTheme] = useState('light');
@@ -12,8 +10,8 @@ export function ThemeToggler() {
   return (
     <Button
       onClick={() => setTheme(nextTheme)}
-      buttonText={`${nextTheme} mode`}
-      variation="secondary"
-    />
+      secondary
+    >{`${nextTheme} mode`}
+    </Button>
   );
 }
