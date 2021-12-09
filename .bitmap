@@ -119,7 +119,7 @@
     },
     "ui/link": {
         "scope": "learn-bit-react.base-ui",
-        "version": "1.0.16",
+        "version": "1.0.17",
         "mainFile": "index.ts",
         "rootDir": "base-ui/ui/link"
     },
