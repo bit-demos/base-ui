@@ -1,5 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
+import { Link } from '@learn-bit-react/base-ui.ui.link';
+
 import styles from './button.module.scss';
 
 export type ButtonOwnProps<E extends React.ElementType = React.ElementType> = {
@@ -20,7 +22,19 @@ export type ButtonOwnProps<E extends React.ElementType = React.ElementType> = {
    */
   white?: boolean;
   /**
-   * uses any element instead of button such as an <a> tag for links
+   * sets the button as a counter button
+   */
+  counter?: boolean;
+  /**
+   * renders the Link component instead of the button
+   */
+  link?: boolean;
+  /**
+   * href if using Link component
+   */
+  href?: string;
+  /**
+   * uses any element instead of button such as an <a> tag for external links
    */
   as?: E;
 };
@@ -43,19 +57,47 @@ export function Button<E extends React.ElementType = typeof defaultElement>({
   primary = false,
   secondary = false,
   white = false,
+  link = false,
+  counter = false,
   as,
+  href = '',
   className,
   ...rest
 }: ButtonProps<E>) {
-  const buttonClassName = createClassNames({ primary, secondary, white });
+  const buttonClassName = createClassNames({
+    primary,
+    secondary,
+    white,
+    counter
+  });
   const TagName = as || defaultElement;
 
   return (
-    <TagName
-      {...rest}
-      className={classNames(styles.button, styles[buttonClassName], className)}
-    >
-      {children}
-    </TagName>
+    <>
+      {!link ? (
+        <TagName
+          className={classNames(
+            styles.button,
+            styles[buttonClassName],
+            className
+          )}
+          {...rest}
+        >
+          {children}
+        </TagName>
+      ) : (
+        <Link
+          href={href}
+          className={classNames(
+            styles.button,
+            styles[buttonClassName],
+            className
+          )}
+          {...rest}
+        >
+          {children}
+        </Link>
+      )}
+    </>
   );
 }

@@ -10,7 +10,7 @@ Button renders the HTML tag `<button>` as default but can use any HTML tag inste
 
 ### Renders a primary button
 
-By adding the `primary` prop, the button will be styled as secondary button. This can be changed to `secondary` or removed to make it a `white` button.
+By adding the `primary` prop, the button will be styled as primary button. This can be changed to `secondary` or `white`.
 
 ```js live
 <Button primary>Primary</Button>
@@ -24,16 +24,34 @@ Add the disabled attribute to the button to disable it.
 <Button disabled>disabled</Button>
 ```
 
-### Renders a Link that looks like a Button
+### Renders a Link Component that looks like a Button
 
-`as` prop allows you to add any HTML tag such as an `a` tag. Button attributes are removed and any attributes of the element specified can be used such as `href` for `a` elements.
+`link` prop allows you to render the `<Link>` component instead of the `<button>` tag for rendering internal links that look like buttons. Button attributes are removed and any attributes of the `<Link>` Component can be used such as `href`.
 
 ```js live
-<Button primary as="a" href="/">
+<Button primary link href="/">
   Link
+</Button>
+```
+
+### Renders a counter button
+
+By adding the `counter` prop, the button will be styled as counter button
+
+```js live
+<Button counter>+</Button>
+```
+
+### Renders a TailwindCSS button
+
+Tailwind has been applied to the env component that this component depends on and therfore TailwindCSS classes can be used.
+
+```js live
+<Button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded p-20">
+  Tailwind Button
 </Button>
 ```
 
 ## Designs
 
-<FigmaEmbed src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FYOdxHWPVnxBcTAYw0zPyXf%2Fstore%3Fnode-id%3D133%253A528" />
+<FigmaEmbed src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FOUW81zYXDu7TXB8wua7Isj%2Fui%3Fnode-id%3D17%253A61" />

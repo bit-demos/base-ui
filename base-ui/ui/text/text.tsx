@@ -4,11 +4,15 @@ import styles from './text.module.scss';
 
 export type TextProps = {
   /**
-   * a text to be rendered in the component.
+   * text rendered as p element or span element
    */
-  text: string;
-} & React.HTMLAttributes<HTMLParagraphElement>;
+  element?: 'p' | 'span';
+} & React.HTMLAttributes<HTMLParagraphElement | HTMLSpanElement>;
 
-export function Text({ text, className }: TextProps) {
-  return <p className={classNames(styles.text, className)}>{text}</p>;
+export function Text({ children, element, className }: TextProps) {
+  const Element = element || 'p';
+
+  return (
+    <Element className={classNames(styles.text, className)}>{children}</Element>
+  );
 }
